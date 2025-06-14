@@ -8,13 +8,9 @@ def navbar() -> rx.Component: # retorna reflex componente
         rx.box(
             #rx.image (src="favicon.ico"),
             rx.text(
-                "Ad",
+                "Ad Quinti",
                 color=TextColor.TXTPRIMARY.value,
-                font_size=Size.DEFAULT.value
-            ), # TextColor.TXTPRIMARY.value),
-            rx.text("Quinti",
-                color=TextColor.TXTPRIMARY.value,
-                font_size=Size.DEFAULT.value
+                font_size=Size.SLIM.value
             ),
             style=styles.navbar_title_style # fuente en Styles.py
         ),

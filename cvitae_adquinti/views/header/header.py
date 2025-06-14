@@ -11,7 +11,7 @@ def header() -> rx.Component:
         rx.hstack(
             rx.avatar(
                 name="Ad Qunti",
-                size="9",
+                size="5",
                 src="avatar.jpg", # img avatar
                 alt="Avatar cara de AdQuinti con pulgar hacia arriba", # web accessibility
                 color=TextColor.HOME.value, # color texto
@@ -23,12 +23,7 @@ def header() -> rx.Component:
             ), # END avatar
             rx.vstack( 
                 rx.heading(
-                    "ADaniel Quinti",
-                    size="7",  # lg titulo H2
-                    #color=TextColor.HOME.value # color TXT
-                ), # END heading
-                rx.text(
-                    "@AdQuinti",
+                    "A.Daniel Quinti - @AdQuinti",
                     margin_top=Size.ZERO.value, # tamaño size espacio
                     color=TextColor.TXTFOOTER.value # color TXT
                 ), # END text
@@ -71,20 +66,20 @@ def header() -> rx.Component:
             spacing='2' #Size.DEFAULT.value
             # espacio que dejamos entre cada uno componentes
         ), # END hstack 1
-        rx.flex( # propiedades tamaño txt y color en archivo info_text.py
-            info_text (f"+{experienceDeveloper()}", " años desarrollador"),
-            rx.spacer(), # genera un espacio entre bloque txt
-            info_text (f"+{experienceTutor()}", " años tutor"),
-            rx.spacer(),
-            info_text (f"+{experienceDocente()}", " años docente"),
-            width="100%",
-            #color=TextColor.TXTFOOTER.value # color TXT
-            ),
+rx.flex(
+    info_text(f"+{experienceDeveloper()}", "años desarrollador"),
+    info_text(f"+{experienceTutor()}", "años tutor"),
+    info_text(f"+{experienceDocente()}", "años docente"),
+    justify_content="space-around",  # string aceptado
+    align_items="center",
+    width="100%",
+    direction="row"
+),
 rx.text(
     rx.fragment(
         "Soy un desarrollador TI y con titulación para impartir la docencia (\"SSCE0110\" - Docencia de la Formación Profesional para el Empleo).\n Formado profesionalmente en Tecnología Informática con una formación amplia. Fruto de los años de experiencia en el sector, como de una actualización permanente en nuevas metodologías, entornos de desarrollo y seguridad. A lo largo de mi carrera, me he especializado tanto en el back-end como en el front-end.\n\n"
         
-        "Mi formación comprende cursos específicos y de certificaciones oficiales en: doncencia \"SSCE0110\" y tutorización online, desarrollo de aplicación con Java en lado servidor \"IFCD07-IFCD05\", Python, machine learning \"IFCD093PO\", SQL, big data, redes \"IFCM040PO\", Git, ciberseguridad \"IFCT001092\", inteligencia artificial \"MMR24024SC200000008\", Html5 \"IFCM036PO\", Css, Bootstrap, así como el manejo de entornos específicos como  ... Así como en desarrollo de aplicación back-end con Java Enterprise, JPA, Servlets, JSP, API Rest, Hibernate, Spring, Maven, Docker ... y manejo de entornos de red e infraestructura. Esto me proporciona una base muy robusta tanto en el diseño de aplicación como en el despliegue de soluciones software en entornos críticos y para la impartición docente de estos conocimientos.\n\n",
+        "Mi formación comprende cursos específicos y de certificaciones oficiales en: doncencia \"SSCE0110\" y tutorización online, desarrollo de aplicación con Java en lado servidor \"IFCD07-IFCD05\", Python, machine learning \"IFCD093PO\", SQL, big data, redes \"IFCM040PO\", Git, ciberseguridad \"IFCT001092\", \"MMR24024SC200000008\" inteligencia artificial, Html5 \"IFCM036PO\", Css, Bootstrap, así como el manejo de entornos específicos como  ... Así como en desarrollo de aplicación back-end con Java Enterprise, JPA, Servlets, JSP, API Rest, Hibernate, Spring, Maven, Docker ... y manejo de entornos de red e infraestructura. Esto me proporciona una base muy robusta tanto en el diseño de aplicación como en el despliegue de soluciones software en entornos críticos y para la impartición docente de estos conocimientos.\n\n",
 
         "Mi experiencia profesional, además, es muy relevante. He ocupado diferentes posiciones, desde programador en empresas como Zausch System Software (Köln-Alemania) o ARI (Grupo Vértice), hasta tutor online, creador de contenidos e implementador de la plataforma del campus en Euroconsultoría S.L.. Impartiendo formación tanto en redes como en desarrollo de software, seguridad, inteligencia artificial o máquinas virtuales (VirtualBox y VMWare Workstation). También tengo conocimientos adquiridos de entornos en tecnología 5G aplicables para: IoT y Smart City \"IFCD97\", Big Data in Artificial Intelligence \"IFCD99\" y de Realidad Virtual y Realidad Aumentada \"IFCD102\".\n Esto pone de manifiesto tanto mis habilidades pedagógicas como de actualización constante, así como de aplicación directa de conocimiento en entornos de producción. Pasando por el sector de mantenimiento de redes, instalación y configuración de servidores en mi experiencia laboral como ayudante técnico de IBM. Y en mi formación \"Crash Course on Python (Coursera – GOOGLE official certificate)\" para resolución de problemas en entornos críticos.\n\n",
 

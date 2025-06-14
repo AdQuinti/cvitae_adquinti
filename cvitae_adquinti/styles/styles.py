@@ -18,10 +18,10 @@ STYLESHEETS = ["https://fonts.googleapis.com/css2?family=Pacifico:wght@400&displ
 
 # Sizes
 class Size(Enum): # encapsulado espaciadores de la web
-    ZERO = "0.px !importat"
+    ZERO = "0.1px !importat"
     SMALL = "0.4em"
-    SLIM = "0.7em"
-    MEDIUM = "0.9em"
+    SLIM = "0.6em"
+    MEDIUM = "0.8em"
     DEFAULT = "1.2em"
     LARGE = "1.8em"
     BIG = "3em"

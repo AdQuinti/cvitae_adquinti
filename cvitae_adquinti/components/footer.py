@@ -25,7 +25,7 @@ def footer() -> rx.Component: # retorna reflex componentes
             margin_top=Size.ZERO.value # tamaño size espacio
         ),
         rx.text(
-            "By Ad_Quinti Portfolio-V1-Beta. Building Software with Reflex-Python - 💚💜- FROM MALAGA",
+            "By @AdQuinti Portfolio. Building Software with Reflex-Python - 💚💜- FROM MALAGA",
             font_size=Size.MEDIUM.value,
             margin_top=Size.ZERO.value # tamaño size espacio
         ),
@@ -35,5 +35,7 @@ def footer() -> rx.Component: # retorna reflex componentes
         padding_x=Size.BIG.value,   # Design-Responsive - mantenga margenes ambos lados
         spacing='2', #Size.DEFAULT.value,
     # color
-        color=TextColor.TXTFOOTER.value # TXT color
+        color=TextColor.TXTFOOTER.value, # TXT color
+    # centrar footer
+        align_items='center'  # <- Esto centra el contenido
     ) # END vstack
