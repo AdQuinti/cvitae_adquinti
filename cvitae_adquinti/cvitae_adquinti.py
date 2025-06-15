@@ -23,8 +23,8 @@ def index() -> rx.Component:
                 links(), # botones
                 max_width=styles.MAX_WIDTH, # archivo STYLES tamaño
                 width="200%", # ocupe td espacio
-                margin_y=Size.BIG.value, # margen arriba y abajo
-                padding=Size.BIG.value
+                margin_y=Size.SLIM.value, # margen arriba y abajo
+                padding=Size.SLIM.value
             )
         ), 
         footer() # (final pag)
