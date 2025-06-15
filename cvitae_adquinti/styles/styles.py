@@ -19,11 +19,11 @@ STYLESHEETS = ["https://fonts.googleapis.com/css2?family=Pacifico:wght@400&displ
 # Sizes
 class Size(Enum): # encapsulado espaciadores de la web
     ZERO = "0.1px !importat"
-    SMALL = "0.4em"
-    SLIM = "0.6em"
-    MEDIUM = "0.8em"
-    DEFAULT = "1.2em"
-    LARGE = "1.8em"
+    SMALL = "0.6em"
+    SLIM = "0.9em"
+    MEDIUM = "1.4em"
+    DEFAULT = "1.8em"
+    LARGE = "2em"
     BIG = "3em"
     VERY_BIG = "4em"
 
@@ -69,14 +69,14 @@ navbar_title_style= dict(
 title_style= dict(
     width="100%", # para que ocupe el máximo
     padding_top=Size.DEFAULT.value, # espacio para colocarlo mejor
-    font_size=Size.LARGE.value # tamaño
+    font_size=Size.DEFAULT.value # tamaño
 )
 
 # Diccionario de propiedades - TXT
 button_title_style = dict( # TXT top boton
     font_family=Font.TITLE.value, # fuente
     font_weight=FontWeight.MEDIUM.value, # tamaño fuente
-    font_size=Size.DEFAULT.value, # tamaño 
+    font_size=Size.MEDIUM.value, # tamaño 
     color=TextColor.HOME.value # color texto TXTHEADER
 )
 button_body_style = dict( # TXXT bottom boton

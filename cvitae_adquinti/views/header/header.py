@@ -10,15 +10,15 @@ def header() -> rx.Component:
     return rx.vstack( 
         rx.hstack(
             rx.avatar(
-                name="Ad Qunti",
-                size="5",
+                name="AdQuinti",
+                size="6",
                 src="avatar.jpg", # img avatar
-                alt="Avatar cara de AdQuinti con pulgar hacia arriba", # web accessibility
+                alt="Avatar AdQuinti con pulgar hacia arriba", # web accessibility
                 color=TextColor.HOME.value, # color texto
                 bg=Color.BACKGROUND.value, # color fondo
                 # para centrar imagen
-                padding="2px", 
-                border="4px",
+                padding="4px", 
+                border="8px",
                 boder_color=Color.BACKGROUND.value # color circulo avatar
             ), # END avatar
             rx.vstack( 
@@ -87,7 +87,7 @@ rx.text(
 
         "Mi perfil es el resultado de combinar formación formal, certificaciones, práctica profesional y una enorme pasión por el aprendizaje constante en el campo de la tecnología. Permitiéndome abordar nuevos retos de forma autónoma o en equipo, aplicar soluciones eficientes, implementar nuevas metodologías y, en definitiva, llevar a buen puerto cualquier proyecto en el que esté involucrado. Siendo hábil y versátil para el campo de la docencia."
     ),
-    font_size=Size.SLIM.value,
+    font_size=Size.MEDIUM.value,
     color=TextColor.TXTCONTENT.value,
     text_align="justify",
     white_space="pre-line"

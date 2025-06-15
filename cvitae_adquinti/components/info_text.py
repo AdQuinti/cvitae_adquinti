@@ -13,7 +13,7 @@ def info_text(title: str, body: str) -> rx.Component:
             ),
             f" {body}",
             as_="span",
-            font_size=Size.SLIM.value,
+            font_size=Size.MEDIUM.value,
             color=TextColor.TXTCONTENT.value,
         ),
         align="center",
