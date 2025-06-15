@@ -22,7 +22,7 @@ def index() -> rx.Component:
                 header(), # cabecera (textos)
                 links(), # botones
                 max_width=styles.MAX_WIDTH, # archivo STYLES tamaño
-                width="200%", # ocupe td espacio
+                width="100%", # ocupe td espacio
                 margin_y=Size.SLIM.value, # margen arriba y abajo
                 padding=Size.SLIM.value
             )
