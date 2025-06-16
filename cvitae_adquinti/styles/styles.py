@@ -4,7 +4,7 @@ from .colors import Color, TextColor
 from .fonts import Font, FontWeight # traemos fuente y peso de la fuente
 
 # Constants
-MAX_WIDTH="560px"
+MAX_WIDTH="860px"
 
 # Styles - fuentes desde web
 # STYLESHEETS = ["https://fonts.googleapis.com/css2?family=Poopins:wght@300;500&display=swap",
