@@ -8,31 +8,31 @@ def footer() -> rx.Component: # retorna reflex componentes
     return rx.vstack (
         rx.image (
             src="favico.ico", # imagen
-            width=Size.BIG.value, # web accessibility definir tds tamaños
-            height=Size.BIG.value,
+            width=Size.MEDIUM.value, # web accessibility definir tds tamaños
+            height=Size.MEDIUM.value,
             alt="Logotipo de AdQuinti, entre imagen de un mundo." # web accessibility - description
         ),
         rx.hstack(
             rx.text(
                 f"@ 2004-{datetime.date.today().year} ",
-                font_size=Size.MEDIUM.value
+                font_size=Size.SLIM.value
             ),
             rx.link("Ad-Quinti",
                 href="#",
                 is_external=True,
-                font_size=Size.MEDIUM.value
+                font_size=Size.SLIM.value
             ), # se abre en otra pag.web
             margin_top=Size.ZERO.value # tamaño size espacio
         ),
         rx.text(
             "By @AdQuinti Portfolio. Building Software with Reflex-Python - 💚💜- FROM MALAGA",
-            font_size=Size.MEDIUM.value,
+            font_size=Size.SLIM.value,
             margin_top=Size.ZERO.value # tamaño size espacio
         ),
     # colocación
-        margin_bottom=Size.BIG.value, # espacio pr abajo
-        padding_bottom=Size.BIG.value,
-        padding_x=Size.BIG.value,   # Design-Responsive - mantenga margenes ambos lados
+        margin_bottom=Size.MEDIUM.value, # espacio pr abajo
+        padding_bottom=Size.MEDIUM.value,
+        padding_x=Size.MEDIUM.value,   # Design-Responsive - mantenga margenes ambos lados
         spacing='2', #Size.DEFAULT.value,
     # color
         color=TextColor.TXTFOOTER.value, # TXT color
