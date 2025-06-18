@@ -1,8 +1,9 @@
+assets/external/
 .venv/
 __pycache__/
 frontend.zip
 public/
-assets/external/
+!assets/external/avatar.jpg
 *.db
 .states
 .web
