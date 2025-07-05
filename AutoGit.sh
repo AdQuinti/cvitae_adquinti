@@ -13,9 +13,14 @@ git add -f assets/external/avatar.jpg
 echo "📁 Añadiendo todos los archivos..."
 git add .
 
-# Mensaje de commit
-echo "📝 Escriba el mensaje de commit:"
-read mensaje
+# Generar mensaje automático con fecha y hora
+fecha=$(date +"%d/%m/%Y")
+hora=$(date +"%H:%M:%S")
+mensaje="Actualización Porfolio: \"$hora\" a fecha \"$fecha\" - realizada por @AdQuinti"
+
+echo "📝 Commit generado automáticamente:"
+echo "$mensaje"
+
 git commit -m "$mensaje"
 
 # Subir a GitHub
@@ -23,3 +28,4 @@ echo "⬆️ Subiendo cambios a GitHub..."
 git push origin main
 
 echo "✅ ¡Repositorio actualizado con éxito! Revisa tu web en Vercel."
+
