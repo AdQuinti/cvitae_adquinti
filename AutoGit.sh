@@ -6,10 +6,10 @@ echo "🔧 Ejecutando build.sh..."
 
 # Forzar agregar avatar.jpg directamente
 echo "📸 Asegurando que avatar.jpg y avatar.png se suba..."
-git add -f assets/avatar.jpg
-git add -f assets/avatar.png
-git add -f assets/external/avatar.jpg
-git add -f assets/external/avatar.png
+git add -f
+git add -f *.jpg *.png
+git add -f assets/**/*.jpg
+git add -f assets/**/*.png
 
 # Agregar todos los archivos restantes
 echo "📁 Añadiendo todos los archivos..."
