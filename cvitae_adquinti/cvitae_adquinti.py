@@ -49,7 +49,7 @@ app.add_page(
     index,
     title="AdQuinti - Porfolio",
     description="Docente de TI, conocimientos en Artificial Intelling (AI), Ciberseguridad, developer siteWeb, programador en backend y frontend, Java, Python, Reflex, Css3, Html5, SQL, MySQL, redes ...",
-    image="avatar.png"
+    image="avatar.jpg"
     ) # añade pag a aplicación
 # ya no es necesaria COMPILE
 #app.compile() 

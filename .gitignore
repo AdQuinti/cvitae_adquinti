@@ -1,10 +1,14 @@
 assets/external/
+# Ignorar todo excepto avatar.jpg y avatar.png
+assets/external/*
+!assets/external/avatar.jpg
+!assets/external/avatar.png
+
+# Ignorar carpetas internas del entorno y otros
 .venv/
 __pycache__/
 frontend.zip
 public/
-assets/external/
-!assets/external/avatar.jpg
 *.db
 .states
 .web
