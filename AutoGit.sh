@@ -5,9 +5,11 @@ echo "🔧 Ejecutando build.sh..."
 ./build.sh || { echo "❌ Error en el build. Revisa antes de subir."; exit 1; }
 
 # Forzar agregar avatar.jpg directamente
-echo "📸 Asegurando que avatar.jpg se suba..."
+echo "📸 Asegurando que avatar.jpg y avatar.png se suba..."
 git add -f assets/avatar.jpg
+git add -f assets/avatar.png
 git add -f assets/external/avatar.jpg
+git add -f assets/external/avatar.png
 
 # Agregar todos los archivos restantes
 echo "📁 Añadiendo todos los archivos..."
