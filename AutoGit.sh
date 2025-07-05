@@ -1,26 +1,25 @@
-# Actualización forzada a repositorio git
-# https://github.com/AdQuinti/cvitae_adquinti.git
-#echo "\n=== Subiendo cambios a GitHub - Forzado ==="
-#git add .
-#git commit -m "Actualización automática $(date)"
-#git push -u -f origin main
-#echo "\n¡Proceso completado!"
-
 #!/bin/bash
-echo "⚙️  Añadiendo todos los archivos, incluyendo ignorados forzadamente..."
 
-# Fuerza agregar avatar.jpg (aunque esté en .gitignore)
+# Ejecuta el build primero
+echo "🔧 Ejecutando build.sh..."
+./build.sh || { echo "❌ Error en el build. Revisa antes de subir."; exit 1; }
+
+# Forzar agregar avatar.jpg directamente
+echo "📸 Asegurando que avatar.jpg se suba..."
+git add -f assets/avatar.jpg
 git add -f assets/external/avatar.jpg
 
-# Añade el resto normalmente (no forzará ignorados, solo avatar.jpg si quieres asegurarlo)
+# Agregar todos los archivos restantes
+echo "📁 Añadiendo todos los archivos..."
 git add .
 
-echo "📦 Escriba su mensaje de commit:"
+# Mensaje de commit
+echo "📝 Escriba el mensaje de commit:"
 read mensaje
-
 git commit -m "$mensaje"
 
-echo "⬆️ Subiendo a GitHub..."
+# Subir a GitHub
+echo "⬆️ Subiendo cambios a GitHub..."
 git push origin main
 
-echo "✅ ¡Subida completada!"
+echo "✅ ¡Repositorio actualizado con éxito! Revisa tu web en Vercel."

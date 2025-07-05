@@ -3,7 +3,8 @@ assets/external/
 __pycache__/
 frontend.zip
 public/
-#assets/external/
+assets/external/
+!assets/external/avatar.jpg
 *.db
 .states
 .web
