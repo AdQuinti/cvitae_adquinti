@@ -12,7 +12,7 @@ def header() -> rx.Component:
             rx.avatar(
                 name="AdQuinti",
                 size="6",
-                src="avatar.jpg", # img avatar
+                src="/avatar.jpg", # img avatar
                 alt="Avatar AdQuinti con pulgar hacia arriba", # web accessibility
                 color=TextColor.HOME.value, # color texto
                 bg=Color.BACKGROUND.value, # color fondo
