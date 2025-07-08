@@ -8,8 +8,8 @@ def link_icon(image: str, url: str, alt: str) -> rx.Component:
         rx.image(
             src=image,
         # web accessibility - definicion tamaños
-            width=Size.BIG.value,
-            height=Size.BIG.value,
+            width=Size.LARGE.value,
+            height=Size.LARGE.value,
             alt=alt # web accessibility - titulo de cada boton, pr eso se pasa pr parametro
         ),
         href=url,
